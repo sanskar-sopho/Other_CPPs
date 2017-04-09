@@ -51,19 +51,19 @@ int det(int **M,int n)
 		N[i-1][j-1]=M[i][j];
 	    }
 	}
-      print(N,n-1);
+      // print(N,n-1);
       sum+=M[0][k]*det(N,n-1)*pow(-1,k);
     }
   return sum;
 }
 
-void print(int **M,int n)
-{
-  for(int i=0;i<n;i++)
-    {
-      for(int j=0;j<n;j++)
-	cout<<M[i][j]<<"   ";
-      cout<<endl;
-    }
-  cout<<"\n************************\n";
-}
+// void print(int **M,int n)
+// {
+//   for(int i=0;i<n;i++)
+//     {
+//       for(int j=0;j<n;j++)
+// 	cout<<M[i][j]<<"   ";
+//       cout<<endl;
+//     }
+//   cout<<"\n************************\n";
+// }
